@@ -1,0 +1,33 @@
+{
+    "name": "Architectural CA Modern Home",
+    "address": "70780 Tamarisk Ln, Rancho Mirage, CA 92270",
+    "description": "Beautiful modern home in Rancho Mirage",
+    "image": "https://ipfs.io/ipfs/QmdQpqfc8YqGSxYfMED71Pu57drYQ9XiLS1oeDQ3ejkg2p/5.png",
+    "id": "5",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 15
+        },
+        {
+            "trait_type": "Type of Residence",
+            "value": "Single Family Residence"
+        },
+        {
+            "trait_type": "Bed Rooms",
+            "value": 2
+        },
+        {
+            "trait_type": "Bathrooms",
+            "value": 3
+        },
+        {
+            "trait_type": "Square Feet",
+            "value": 2200
+        },
+        {
+            "trait_type": "Year Built",
+            "value": 1998
+        }
+    ]
+}

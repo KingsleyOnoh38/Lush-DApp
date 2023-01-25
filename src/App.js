@@ -78,18 +78,20 @@ function App() {
                 <img src={home.image} alt="Home" />
               </div>
               <div className='card__info'>
-                <h4> ETH</h4>
+                <h4>{home.attributes[0].value} ETH</h4>
+                
                 <p>
-                  <strong>1</strong>
-                  <strong>2</strong>
-                  <strong>3</strong>
+                  <strong>{home.attributes[2].value}</strong> bds |
+                  <strong>{home.attributes[3].value}</strong> ba |
+                  <strong>{home.attributes[4].value}</strong> sqft
                 </p>
 
                 <p>
-                  <strong>1</strong>
-                  <strong>2</strong>
-                  <strong>3</strong>
+                  <strong>{home.attributes[2].value}</strong> bds |
+                  <strong>{home.attributes[3].value}</strong> ba |
+                  <strong>{home.attributes[4].value}</strong> sqft
                 </p>
+
                 <p>{home.address}</p>
               </div>
             </div>

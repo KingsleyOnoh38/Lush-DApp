@@ -164,8 +164,8 @@ header {
 }
 
 .card {
-  width: 320px;
-  height: 356px;
+  width: 346px;
+  height: 350px;
 
   border: 1px solid var(--clr-black);
   margin: 10px auto;
@@ -192,7 +192,7 @@ header {
 
 .card__info {
   width: 100%;
-  height: 45%;
+  height: 30%;
 
   background-color: var(--clr-white);
 

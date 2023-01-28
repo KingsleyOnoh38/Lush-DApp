@@ -20,10 +20,10 @@ async function main() {
   await lushEstate.deployed()
 
   console.log(`Deployed Lush Estate Contract at: ${lushEstate.address}`)
-  console.log(`Minting 6 properties...\n`)
+  console.log(`Minting 12 properties...\n`)
 
-  for (let i = 0; i < 6; i++) {
-    const transaction = await lushEstate.connect(seller).mint(`https://ipfs.io/ipfs/QmQBiHztJi6DyS1Ciyr3zNjjRiLbWmxpbkiY4kdYCCPmbt/${i + 1}.json`)
+  for (let i = 0; i < 12; i++) {
+    const transaction = await lushEstate.connect(seller).mint(`https://ipfs.io/ipfs/QmfPjWLJo5CihJwDSANN5tzzhjccCwetDvmxzaqDfBcnLE/${i + 1}.json`)
     await transaction.wait()
   }
 
@@ -38,34 +38,53 @@ async function main() {
   await escrow.deployed()
 
   console.log(`Deployed Escrow Contract at: ${escrow.address}`)
-  console.log(`Listing 6 properties...\n`)
+  console.log(`Listing 12 properties...\n`)
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 12; i++) {
     // Approve properties...
     let transaction = await lushEstate.connect(seller).approve(escrow.address, i + 1)
     await transaction.wait()
   }
 
   // Listing properties...
-  transaction = await escrow.connect(seller).list(1, buyer.address, tokens(20), tokens(10))
+  transaction = await escrow.connect(seller).list(1, buyer.address, tokens(0.02), tokens(0.005))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(2, buyer.address, tokens(20), tokens(10))
+  transaction = await escrow.connect(seller).list(2, buyer.address, tokens(0.02), tokens(0.005))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(3, buyer.address, tokens(20), tokens(10))
+  transaction = await escrow.connect(seller).list(3, buyer.address, tokens(0.15), tokens(0.005))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(4, buyer.address, tokens(15), tokens(10))
+  transaction = await escrow.connect(seller).list(4, buyer.address, tokens(0.02), tokens(0.005))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(5, buyer.address, tokens(15), tokens(10))
+  transaction = await escrow.connect(seller).list(5, buyer.address, tokens(0.04), tokens(0.005))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(6, buyer.address, tokens(10), tokens(5))
+  transaction = await escrow.connect(seller).list(6, buyer.address, tokens(0.02), tokens(0.005))
+  await transaction.wait()
+
+  transaction = await escrow.connect(seller).list(7, buyer.address, tokens(0.012), tokens(0.005))
+  await transaction.wait()
+
+  transaction = await escrow.connect(seller).list(8, buyer.address, tokens(0.03), tokens(0.005))
+  await transaction.wait()
+
+  transaction = await escrow.connect(seller).list(9, buyer.address, tokens(0.04), tokens(0.005))
+  await transaction.wait()
+
+  transaction = await escrow.connect(seller).list(10, buyer.address, tokens(0.03), tokens(0.005))
+  await transaction.wait()
+
+  transaction = await escrow.connect(seller).list(11, buyer.address, tokens(0.025), tokens(0.005))
+  await transaction.wait()
+
+  transaction = await escrow.connect(seller).list(12, buyer.address, tokens(0.02), tokens(0.005))
   await transaction.wait()
 
 
+  
   console.log(`Successful.`)
 }
 

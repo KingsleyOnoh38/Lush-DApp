@@ -1,21 +1,21 @@
 {
-    "name": "Semi Detached Duplex",
-    "address": "157 Orchid Road, Lagos, Nigeria",
-    "description": "Luxury Penthouse located in the heart of NYC",
-    "image": "https://ipfs.io/ipfs/QmfVMyrb7gvuuDuvnYZhp9ZXMV4DSP52EpQ2oAeJMqqd7u/4.png",
-    "id": "4",
+    "name": "Twin Duplex",
+    "address": "Westminster, Central London",
+    "description": "Beautiful home located in the heart of Central London",
+    "image": "https://ipfs.io/ipfs/QmfVMyrb7gvuuDuvnYZhp9ZXMV4DSP52EpQ2oAeJMqqd7u/8.png",
+    "id": "8",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 0.02
+            "value": 0.03
         },
         {
             "trait_type": "Type of Residence",
-            "value": "Duplex"
+            "value": "Twin Duplex"
         },
         {
             "trait_type": "Bed Rooms",
-            "value": 3
+            "value": 4
         },
         {
             "trait_type": "Bathrooms",
@@ -23,11 +23,11 @@
         },
         {
             "trait_type": "Square Feet",
-            "value": 2200
+            "value": 2209
         },
         {
             "trait_type": "Year Built",
-            "value": 2019
+            "value": 2009
         }
     ]
 }

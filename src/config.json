@@ -10,10 +10,10 @@
 
     "80001": {
         "lushEstate": {
-            "address": "0xE64456381CFc24ae09ACBD47cB25f6817DbD9a07"
+            "address": "0x916cd62bC5734F056b1a73dA923e55F499A86925"
         },
         "escrow": {
-            "address": "0x7f5910373dE9916040DAFAF0FC2Ba7CE56ff21d8"
+            "address": "0xD1de2Ed05fbDF97d8Db16E5389d756652d66F107"
         }
     }
 }

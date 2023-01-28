@@ -2,12 +2,12 @@
     "name": "Luxury Four Bedroom Bungalow",
     "address": "75B Adeleke Street, Banana Island, Lagos",
     "description": "Luxury Penthouse located in the heart of NYC",
-    "image": "https://ipfs.io/ipfs/QmdQpqfc8YqGSxYfMED71Pu57drYQ9XiLS1oeDQ3ejkg2p/2.png",
+    "image": "https://ipfs.io/ipfs/QmfVMyrb7gvuuDuvnYZhp9ZXMV4DSP52EpQ2oAeJMqqd7u/2.png",
     "id": "2",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 20
+            "value": 0.02
         },
         {
             "trait_type": "Type of Residence",

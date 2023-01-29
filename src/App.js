@@ -67,7 +67,7 @@ function App() {
 
       <div className='cards__section'>
 
-        <h3>Homes For You</h3>
+        <h3>Properties For You</h3>
 
         <hr />
 
